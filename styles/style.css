@@ -101,6 +101,7 @@ a {
 }
 
 .promo__main-title {
+    padding-top: 13px;
     padding-left: 16px;
     max-width: 405px;
     text-transform: uppercase;
