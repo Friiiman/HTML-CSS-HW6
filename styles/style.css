@@ -1,5 +1,3 @@
-/* ----------HOMEWORK 6---------- */
-
 /* lato-300 - latin */
 @font-face {
     font-display: swap;
@@ -301,7 +299,6 @@ a {
 .catalog-card {
     position: relative;
     background-color: #f8f8f8;
-    max-height: 581px;
 }
 
 .catalog-card:hover .catalog-card__img::before {
@@ -380,7 +377,10 @@ a {
 }
 
 .catalog__button {
-    border: none;
+    display: inline-block;
+    padding: 15px 39px;
+    color: #F26376;
+    border: 1px solid #FF6A6A;
     background-color: transparent;
 }
 
@@ -391,7 +391,7 @@ a {
     border: 1px solid #FF6A6A;
 }
 
-.catalog__button-link:hover {
+.catalog__button:hover {
     background-color: #FF6A6A;
     color: #fff;
     border: 1px solid #FF6A6A;
@@ -470,19 +470,20 @@ a {
 }
 
 .subscribe-card {
-    max-width: 360px;
-    height: 225px;
-    z-index: 1;
-}
-
-.subscribe-card__figure {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    max-width: 360px;
+    z-index: 1;
 }
 
 .subscribe-card__img {
     margin-bottom: 30px;
+}
+
+.subscribe-card__text {
+    padding-bottom: 50px;
 }
 
 .subscribe-card__blockquote {
@@ -494,12 +495,12 @@ a {
 .subscribe__content {
     display: flex;
     flex-direction: column;
+    gap: 32px;
     max-height: 142px;
     z-index: 1;
 }
 
 .subscribe__title {
-    margin-bottom: 32px;
     text-align: center;
     text-transform: uppercase;
     font-size: 24px;
@@ -518,9 +519,10 @@ a {
 }
 
 .subscribe__form-email {
+    padding-right: 22px;
     padding-left: 22px;
-    width: 256px;
-    height: 49px;
+    min-width: 256px;
+    min-height: 49px;
     border: none;
     border-radius: 50px 0 0 50px;
     background-color: #e1e1e1;
@@ -531,8 +533,8 @@ a {
 }
 
 .subscribe__form-button {
-    width: 100px;
-    height: 49px;
+    min-width: 100px;
+    min-height: 49px;
     color: #fff;
     border: none;
     border-radius: 0 50px 50px 0;
@@ -672,6 +674,10 @@ a {
         flex-direction: column;
         gap: 48px;
     }
+
+    .subscribe-card__text {
+        padding-bottom: 27px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -764,16 +770,16 @@ a {
         gap: 59px;
     }
 
-    .subscribe-card {
-        height: auto;
+    .subscribe-card__text {
+        padding-bottom: 0;
     }
 
     .subscribe-card__blockquote {
         font-size: 18px;
     }
 
-    .subscribe__title {
-        margin-bottom: 22px;
+    .subscribe__content {
+        gap: 22px;
     }
 
     .subscribe__title--smaller {
@@ -782,13 +788,13 @@ a {
 
     .subscribe__form-email {
         padding-left: 21px;
-        width: 245px;
-        height: 47px;
+        min-width: 245px;
+        min-height: 47px;
     }
 
     .subscribe__form-button {
-        width: 96px;
-        height: 47px;
+        min-width: 96px;
+        min-height: 47px;
     }
 
     .page-footer{
@@ -805,10 +811,10 @@ a {
 @media (max-width: 360px) {
 
     .subscribe__form-email {
-        width: 210px;
+        min-width: 210px;
     }
 
     .subscribe__form-button {
-        width: 90px;
+        min-width: 90px;
     }
 }
