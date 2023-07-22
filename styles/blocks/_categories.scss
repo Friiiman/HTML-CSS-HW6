@@ -1,0 +1,29 @@
+.categories {
+    margin-bottom: 96px;
+
+    @media (max-width: $screen-xmd) {
+        margin-bottom: 109px;
+    }
+
+    @media (max-width: $screen-md) {
+        margin-bottom: 64px;
+    }
+
+    & .center-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 260px 180px;
+        gap: 30px;
+
+        @media (max-width: $screen-xmd) {
+            grid-template-rows: 167px 116px;
+            gap: 19px;
+        }
+
+        @media (max-width: $screen-md) {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 248px 248px 248px 111px;
+            gap: 32px;
+        }
+    }
+}

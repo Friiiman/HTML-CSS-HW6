@@ -1,0 +1,31 @@
+.page-footer {
+    padding-top: 24px;
+    padding-bottom: 23px;
+    background-color: #222224;
+
+    @media (max-width: $screen-md) {
+        padding-top: 43px;
+        padding-bottom: 9px;
+    }
+
+    & .center-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: $screen-md) {
+            flex-direction: column-reverse;
+            gap: 40px;
+        }
+    }
+
+    &__rights {
+        color: #fbfbfb;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        gap: 7px;
+    }
+}

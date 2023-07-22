@@ -1,0 +1,9 @@
+.product-catalog {
+    padding-top: 665px;
+    padding-bottom: 128px;
+
+    & .center-container {
+        display: flex;
+        gap: 30px;
+    }
+}

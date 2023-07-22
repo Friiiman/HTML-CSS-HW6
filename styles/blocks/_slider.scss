@@ -1,0 +1,38 @@
+.slider {
+    display: flex;
+    justify-content: center;
+    padding-top: 11px;
+    padding-bottom: 42px;
+
+    &__left,
+    &__right {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: calc(50% - 23px);
+        width: 47px;
+        height: 47px;
+        background-color: rgba(42, 42, 42, 0.15);
+        border: none;
+        cursor: pointer;
+    }
+
+    &__left {
+        padding-right: 5px;
+        left: 0;
+
+        &:hover svg path {
+            fill: $main-color;
+        }
+    }
+
+    &__right {
+        padding-left: 5px;
+        right: 0;
+
+        &:hover svg path {
+            fill: $main-color;
+        }
+    }
+}

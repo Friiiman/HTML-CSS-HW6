@@ -1,0 +1,16 @@
+.sub-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    list-style-type: none;
+
+    &__link {
+        margin-left: 21px;
+        font-size: 14px;
+        color: #6F6E6E;
+
+        &:hover {
+            color: $main-color;
+        }
+    }
+}
