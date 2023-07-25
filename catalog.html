@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Brand of Luxerious Fashion</title>
+    <title>Catalog</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -12,7 +12,7 @@
     <header class="page-header">
         <div class="center-container">
             <div class="page-header__left">
-                <a href="#" class="page-header__logo">
+                <a href="index.html" class="page-header__logo">
                     <img src="styles/img/main-logo.svg" alt="logo" class="page-header__logo-img">
                 </a>
                 <img src="styles/img/search-ico.svg" alt="search" class="page-header__search">
@@ -93,49 +93,165 @@
     </header>
 
     <main class="page-main">
-
-        <section class="promo">
+        <section class="page-top">
             <div class="center-container">
-                <img src="styles/img/promo.svg" alt="image" class="promo__img">
-                <h1 class="promo__main-title">The Brand <br> <span class="promo__main-title--smaller"> of Luxerious
-                        <span class="promo__main-title--pink"> Fashion</span></span></h1>
+                <h1 class="page-top__title">New arrivals</h1>
+                <nav class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__link">Home</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">Men</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link  breadcrumbs__link--active">New arrivals</span>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </section>
 
-        <div class="categories">
+        <div class="main-catalog">
             <div class="center-container">
-                <a href="#" class="categories-card categories-card__women">
-                    <div class="categories-card__content">
-                        <span class="categories-card__text">30% off</span>
-                        <h3 class="categories-card__title">For women</h3>
-                    </div>
-                </a>
-                <a href="#" class="categories-card categories-card__men">
-                    <div class="categories-card__content">
-                        <span class="categories-card__text">Hot deal</span>
-                        <h3 class="categories-card__title">For men</h3>
-                    </div>
-                </a>
-                <a href="#" class="categories-card categories-card__kids">
-                    <div class="categories-card__content">
-                        <span class="categories-card__text">New arrivals</span>
-                        <h3 class="categories-card__title">For kids</h3>
-                    </div>
-                </a>
-                <a href="#" class="categories-card categories-card__accesories categories-card--big">
-                    <div class="categories-card__content">
-                        <span class="categories-card__text">Luxirous & trendy</span>
-                        <h3 class="categories-card__title">Accesories</h3>
-                    </div>
-                </a>
-            </div>
-        </div>
 
-        <section class="catalog">
-            <div class="center-container">
-                <h2 class="catalog__title">Fetured Items</h2>
-                <p class="catalog__text">Shop for items based on what we featured in this week</p>
-                <div class="catalog__content">
+                <div class="main-catalog__filter-sort">
+                    <div class="filter">
+                        <details class="filter__details">
+                            <summary class="filter__title">
+                                <span>Filter</span>
+                                <svg width="15" height="10" viewBox="0 0 15 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
+                                        fill="black" />
+                                </svg>
+                            </summary>
+                            <div class="filter__content">
+                                <details class="filter__options" open>
+                                    <summary class="filter__subtitle">
+                                        <span>Category</span>
+                                    </summary>
+                                    <div class="filter__options-content">
+                                        <a href="#" class="filter__link">Accessories</a>
+                                        <a href="#" class="filter__link">Bags</a>
+                                        <a href="#" class="filter__link">Denim</a>
+                                        <a href="#" class="filter__link">Hoodies & Sweatshirts</a>
+                                        <a href="#" class="filter__link">Jackets & Coats</a>
+                                        <a href="#" class="filter__link">Polos</a>
+                                        <a href="#" class="filter__link">Shirts</a>
+                                        <a href="#" class="filter__link">Shoes</a>
+                                        <a href="#" class="filter__link">Sweaters & Knits</a>
+                                        <a href="#" class="filter__link">T-Shirts</a>
+                                        <a href="#" class="filter__link">Tanks</a>
+                                    </div>
+                                </details>
+                                <details class="filter__options">
+                                    <summary class="filter__subtitle">
+                                        <span>Brand</span>
+                                    </summary>
+                                    <div class="filter__options-content">
+                                        <a href="#" class="filter__link">Accessories</a>
+                                        <a href="#" class="filter__link">Bags</a>
+                                        <a href="#" class="filter__link">Denim</a>
+                                        <a href="#" class="filter__link">Hoodies & Sweatshirts</a>
+                                        <a href="#" class="filter__link">Jackets & Coats</a>
+                                        <a href="#" class="filter__link">Polos</a>
+                                        <a href="#" class="filter__link">Shirts</a>
+                                        <a href="#" class="filter__link">Shoes</a>
+                                        <a href="#" class="filter__link">Sweaters & Knits</a>
+                                        <a href="#" class="filter__link">T-Shirts</a>
+                                        <a href="#" class="filter__link">Tanks</a>
+                                    </div>
+                                </details>
+                                <details class="filter__options">
+                                    <summary class="filter__subtitle">
+                                        <span>Designer</span>
+                                    </summary>
+                                    <div class="filter__options-content">
+                                        <a href="#" class="filter__link">Accessories</a>
+                                        <a href="#" class="filter__link">Bags</a>
+                                        <a href="#" class="filter__link">Denim</a>
+                                        <a href="#" class="filter__link">Hoodies & Sweatshirts</a>
+                                        <a href="#" class="filter__link">Jackets & Coats</a>
+                                        <a href="#" class="filter__link">Polos</a>
+                                        <a href="#" class="filter__link">Shirts</a>
+                                        <a href="#" class="filter__link">Shoes</a>
+                                        <a href="#" class="filter__link">Sweaters & Knits</a>
+                                        <a href="#" class="filter__link">T-Shirts</a>
+                                        <a href="#" class="filter__link">Tanks</a>
+                                    </div>
+                                </details>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="sort">
+                        <details class="sort__item">
+                            <summary class="sort__summary">
+                                <span>Trending now</span>
+                                <svg width="10" height="5" viewBox="0 0 11 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.00214 5.64846C4.83521 5.64879 4.67343 5.59016 4.54488 5.48275L0.258102 1.88021C0.112196 1.75791 0.0204417 1.58217 0.00302325 1.39165C-0.0143952 1.20112 0.0439493 1.01143 0.165221 0.864289C0.286493 0.717149 0.460759 0.624619 0.649682 0.607053C0.838605 0.589487 1.02671 0.648325 1.17262 0.770623L5.00214 3.9985L8.83167 0.885905C8.90475 0.826055 8.98884 0.781361 9.0791 0.754391C9.16937 0.727421 9.26403 0.718707 9.35764 0.72875C9.45126 0.738794 9.54198 0.767396 9.6246 0.812913C9.70722 0.85843 9.7801 0.919965 9.83906 0.993981C9.90449 1.06806 9.95405 1.15498 9.98462 1.24927C10.0152 1.34357 10.0261 1.44321 10.0167 1.54197C10.0073 1.64073 9.97784 1.73646 9.93005 1.82318C9.88227 1.9099 9.81723 1.98573 9.73904 2.04592L5.45225 5.52598C5.32002 5.61641 5.16154 5.65954 5.00214 5.64846Z"
+                                        fill="#6F6E6E" />
+                                </svg>
+                            </summary>
+                            <div class="sort__info">
+                                <div class="sort__info-item">
+                                    <input type="radio" id="color1" name="color" class="sort__info-select">
+                                    <label for="color1">All</label>
+                                </div>
+                                <div class="sort__info-item">
+                                    <input type="radio" id="color2" name="color" class="sort__info-select">
+                                    <label for="color2">In stock</label>
+                                </div>
+                            </div>
+                        </details>
+                        <details class="sort__item">
+                            <summary class="sort__summary">
+                                <span>Size</span>
+                                <svg width="10" height="5" viewBox="0 0 11 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.00214 5.64846C4.83521 5.64879 4.67343 5.59016 4.54488 5.48275L0.258102 1.88021C0.112196 1.75791 0.0204417 1.58217 0.00302325 1.39165C-0.0143952 1.20112 0.0439493 1.01143 0.165221 0.864289C0.286493 0.717149 0.460759 0.624619 0.649682 0.607053C0.838605 0.589487 1.02671 0.648325 1.17262 0.770623L5.00214 3.9985L8.83167 0.885905C8.90475 0.826055 8.98884 0.781361 9.0791 0.754391C9.16937 0.727421 9.26403 0.718707 9.35764 0.72875C9.45126 0.738794 9.54198 0.767396 9.6246 0.812913C9.70722 0.85843 9.7801 0.919965 9.83906 0.993981C9.90449 1.06806 9.95405 1.15498 9.98462 1.24927C10.0152 1.34357 10.0261 1.44321 10.0167 1.54197C10.0073 1.64073 9.97784 1.73646 9.93005 1.82318C9.88227 1.9099 9.81723 1.98573 9.73904 2.04592L5.45225 5.52598C5.32002 5.61641 5.16154 5.65954 5.00214 5.64846Z"
+                                        fill="#6F6E6E" />
+                                </svg>
+                            </summary>
+                            <div class="sort__info">
+                                <div class="sort__info-item">
+                                    <input type="checkbox" id="size1" class="sort__info-select">
+                                    <label for="size1">xs</label>
+                                </div>
+                                <div class="sort__info-item">
+                                    <input type="checkbox" id="size2" class="sort__info-select">
+                                    <label for="size2">s</label>
+                                </div>
+                                <div class="sort__info-item">
+                                    <input type="checkbox" id="size3" class="sort__info-select">
+                                    <label for="size3">m</label>
+                                </div>
+                                <div class="sort__info-item">
+                                    <input type="checkbox" id="size4" class="sort__info-select">
+                                    <label for="size4">l</label>
+                                </div>
+                            </div>
+                        </details>
+                        <details class="sort__item">
+                            <summary class="sort__summary">
+                                <span>Price</span>
+                                <svg width="10" height="5" viewBox="0 0 11 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.00214 5.64846C4.83521 5.64879 4.67343 5.59016 4.54488 5.48275L0.258102 1.88021C0.112196 1.75791 0.0204417 1.58217 0.00302325 1.39165C-0.0143952 1.20112 0.0439493 1.01143 0.165221 0.864289C0.286493 0.717149 0.460759 0.624619 0.649682 0.607053C0.838605 0.589487 1.02671 0.648325 1.17262 0.770623L5.00214 3.9985L8.83167 0.885905C8.90475 0.826055 8.98884 0.781361 9.0791 0.754391C9.16937 0.727421 9.26403 0.718707 9.35764 0.72875C9.45126 0.738794 9.54198 0.767396 9.6246 0.812913C9.70722 0.85843 9.7801 0.919965 9.83906 0.993981C9.90449 1.06806 9.95405 1.15498 9.98462 1.24927C10.0152 1.34357 10.0261 1.44321 10.0167 1.54197C10.0073 1.64073 9.97784 1.73646 9.93005 1.82318C9.88227 1.9099 9.81723 1.98573 9.73904 2.04592L5.45225 5.52598C5.32002 5.61641 5.16154 5.65954 5.00214 5.64846Z"
+                                        fill="#6F6E6E" />
+                                </svg>
+                            </summary>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="main-catalog__items">
                     <a href="product.html" class="catalog-card">
                         <div class="catalog-card__img">
                             <img src="styles/img/catalog-card1.png" alt="image" class="catalog-card__img-item">
@@ -151,10 +267,9 @@
                     </a>
                     <a href="product.html" class="catalog-card">
                         <div class="catalog-card__img">
-                            <img src="styles/img/catalog-card2.png" alt="image" class="catalog-card__img-item">
+                            <img src="styles/img/catalog-card7.png" alt="image" class="catalog-card__img-item">
                             <div class="catalog-card__img-button">
-                                <img src="styles/img/shop-cart.svg" alt="shop cart">Add
-                                to Cart
+                                <img src="styles/img/shop-cart.svg" alt="shop cart">Add to Cart
                             </div>
                         </div>
                         <h3 class="catalog-card__title">Ellery x m'o capsule</h3>
@@ -167,8 +282,7 @@
                         <div class="catalog-card__img">
                             <img src="styles/img/catalog-card3.png" alt="image" class="catalog-card__img-item">
                             <div class="catalog-card__img-button">
-                                <img src="styles/img/shop-cart.svg" alt="shop cart">Add
-                                to Cart
+                                <img src="styles/img/shop-cart.svg" alt="shop cart">Add to Cart
                             </div>
                         </div>
                         <h3 class="catalog-card__title">Ellery x m'o capsule</h3>
@@ -181,8 +295,7 @@
                         <div class="catalog-card__img">
                             <img src="styles/img/catalog-card4.png" alt="image" class="catalog-card__img-item">
                             <div class="catalog-card__img-button">
-                                <img src="styles/img/shop-cart.svg" alt="shop cart">Add
-                                to Cart
+                                <img src="styles/img/shop-cart.svg" alt="shop cart">Add to Cart
                             </div>
                         </div>
                         <h3 class="catalog-card__title">Ellery x m'o capsule</h3>
@@ -193,10 +306,9 @@
                     </a>
                     <a href="product.html" class="catalog-card">
                         <div class="catalog-card__img">
-                            <img src="styles/img/catalog-card5.png" alt="image" class="catalog-card__img-item">
+                            <img src="styles/img/catalog-card8.png" alt="image" class="catalog-card__img-item">
                             <div class="catalog-card__img-button">
-                                <img src="styles/img/shop-cart.svg" alt="shop cart">Add
-                                to Cart
+                                <img src="styles/img/shop-cart.svg" alt="shop cart">Add to Cart
                             </div>
                         </div>
                         <h3 class="catalog-card__title">Ellery x m'o capsule</h3>
@@ -207,10 +319,48 @@
                     </a>
                     <a href="product.html" class="catalog-card">
                         <div class="catalog-card__img">
-                            <img src="styles/img/catalog-card6.png" alt="image" class="catalog-card__img-item">
+                            <img src="styles/img/catalog-card9.png" alt="image" class="catalog-card__img-item">
                             <div class="catalog-card__img-button">
-                                <img src="styles/img/shop-cart.svg" alt="shop cart">Add
-                                to Cart
+                                <img src="styles/img/shop-cart.svg" alt="shop cart">Add to Cart
+                            </div>
+                        </div>
+                        <h3 class="catalog-card__title">Ellery x m'o capsule</h3>
+                        <p class="catalog-card__text">Known for her sculptural takes on traditional tailoring,
+                            Australian
+                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <span class="catalog-card__price">$52.00</span>
+                    </a>
+                    <a href="product.html" class="catalog-card">
+                        <div class="catalog-card__img">
+                            <img src="styles/img/catalog-card10.png" alt="image" class="catalog-card__img-item">
+                            <div class="catalog-card__img-button">
+                                <img src="styles/img/shop-cart.svg" alt="shop cart">Add to Cart
+                            </div>
+                        </div>
+                        <h3 class="catalog-card__title">Ellery x m'o capsule</h3>
+                        <p class="catalog-card__text">Known for her sculptural takes on traditional tailoring,
+                            Australian
+                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <span class="catalog-card__price">$52.00</span>
+                    </a>
+                    <a href="product.html" class="catalog-card">
+                        <div class="catalog-card__img">
+                            <img src="styles/img/catalog-card11.png" alt="image" class="catalog-card__img-item">
+                            <div class="catalog-card__img-button">
+                                <img src="styles/img/shop-cart.svg" alt="shop cart">Add to Cart
+                            </div>
+                        </div>
+                        <h3 class="catalog-card__title">Ellery x m'o capsule</h3>
+                        <p class="catalog-card__text">Known for her sculptural takes on traditional tailoring,
+                            Australian
+                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <span class="catalog-card__price">$52.00</span>
+                    </a>
+                    <a href="product.html" class="catalog-card">
+                        <div class="catalog-card__img">
+                            <img src="styles/img/catalog-card12.png" alt="image" class="catalog-card__img-item">
+                            <div class="catalog-card__img-button">
+                                <img src="styles/img/shop-cart.svg" alt="shop cart">Add to Cart
                             </div>
                         </div>
                         <h3 class="catalog-card__title">Ellery x m'o capsule</h3>
@@ -220,9 +370,36 @@
                         <span class="catalog-card__price">$52.00</span>
                     </a>
                 </div>
-                <a href="catalog.html" class="catalog__button">Browse All Product</a>
+
+                <div class="pagination">
+                    <div class="pagination__inner">
+                        <a href="#" class="pagination__arrow">
+                            <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.995 2L3.995 7L8.995 12L7.995 14L0.994995 7L7.995 0L8.995 2Z" fill="black" />
+                            </svg>
+                        </a>
+                        <div class="pagination__list">
+                            <span class="pagination__link  pagination__link--active">1</span>
+                            <a href="#" class="pagination__link">2</a>
+                            <a href="#" class="pagination__link">3</a>
+                            <a href="#" class="pagination__link">4</a>
+                            <a href="#" class="pagination__link">5</a>
+                            <a href="#" class="pagination__link">6</a>
+                            <span class="pagination__link  pagination__link-dots">.....</span>
+                            <a href="#" class="pagination__link">20</a>
+                        </div>
+                        <a href="#" class="pagination__arrow">
+                            <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.994995 12L5.995 7L0.994995 2L1.995 0L8.995 7L1.995 14L0.994995 12Z"
+                                    fill="black" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
 
         <div class="advantages">
             <div class="center-container">
@@ -272,7 +449,6 @@
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer class="page-footer">

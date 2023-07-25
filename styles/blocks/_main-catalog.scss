@@ -1,0 +1,17 @@
+.main-catalog {
+    padding-top: 38px;
+    padding-bottom: 96px;
+
+    &__filter-sort {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 30px;
+        margin-bottom: 48px;
+    }
+}

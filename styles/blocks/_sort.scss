@@ -1,11 +1,12 @@
-.product-details {
+.sort {
     display: flex;
-    gap: 23px;
+    gap: 28px;
 
     &__item {
         position: relative;
+        z-index: 5;
 
-        &[open] .product-details__summary {
+        &[open] .sort__summary {
             color: $main-color;
         }
 
