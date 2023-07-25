@@ -1119,6 +1119,7 @@ a {
 .sort {
   display: flex;
   gap: 28px;
+  margin-top: 13px;
 }
 .sort__item {
   position: relative;
