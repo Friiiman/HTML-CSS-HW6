@@ -1,0 +1,77 @@
+.cart-card {
+    position: relative;
+    display: flex;
+    max-height: 306px;
+    background-color: $white-color;
+    box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
+
+    &__img {
+        height: 100%;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 42px;
+        padding-top: 22px;
+        padding-right: 22px;
+        padding-left: 31px;
+    }
+
+    &__title {
+        max-width: 262px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: #222;
+        text-transform: uppercase;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &__detail {
+        font-size: 22px;
+        color: #575757;
+
+        &--price {
+            color: $main-color;
+        }
+
+        &--highlighted {
+            color: #6F6E6E;
+        }
+    }
+
+    &__detail-input {
+        margin-left: 20px;
+        text-align: center;
+        width: 44px;
+        font-size: 18px;
+        line-height: 21px;
+        color: #656565;
+        border: 1px solid #EAEAEA;
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 28px;
+        right: 22px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        &:hover svg path {
+            fill: $main-color;
+        }
+    }
+}

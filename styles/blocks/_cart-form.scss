@@ -1,0 +1,51 @@
+.cart-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 21px;
+    width: 360px;
+
+    &__title {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222;
+        text-transform: uppercase;
+    }
+
+    &__input {
+        height: 45px;
+        padding: 0 17px;
+        font-size: 13px;
+        font-weight: 300;
+        font-size: 13px;
+        background-color: $white-color;
+        border: 1px solid #A4A4A4;
+
+        &::placeholder {
+            color: #B1B1B1;
+        }
+
+        &:not(:first-of-type)::placeholder {
+            color: #222;
+        }
+    }
+
+    &__button {
+        margin-top: 3px;
+        width: 101px;
+        height: 35px;
+        font-weight: 300;
+        font-size: 11px;
+        color: #4A4A4A;
+        text-transform: uppercase;
+        background-color: $white-color;
+        border: 1px solid #A4A4A4;
+        cursor: pointer;
+
+        &:hover {
+            color: $white-color;
+            background-color: #A4A4A4;
+        }
+    }
+}
