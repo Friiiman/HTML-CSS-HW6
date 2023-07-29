@@ -64,6 +64,7 @@
         color: #F26376;
         border: 1px solid $sub-color;
         background-color: transparent;
+        transition: background-color .3s, color .3s;
 
         &:hover {
             background-color: $sub-color;

@@ -191,6 +191,7 @@ a {
   margin-left: 21px;
   font-size: 14px;
   color: #6F6E6E;
+  transition: color 0.5s;
 }
 .sub-nav__link:hover {
   color: #f16d7f;
@@ -434,6 +435,7 @@ a {
   color: #F26376;
   border: 1px solid #ff6a6a;
   background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
 }
 .catalog__button:hover {
   background-color: #ff6a6a;
@@ -446,9 +448,10 @@ a {
 }
 .catalog-card:hover .catalog-card__img::before {
   visibility: visible;
+  opacity: 1;
 }
 .catalog-card:hover .catalog-card__img-button {
-  visibility: visible;
+  opacity: 1;
 }
 .catalog-card__img {
   position: relative;
@@ -457,17 +460,18 @@ a {
 .catalog-card__img::before {
   content: "";
   position: absolute;
-  visibility: hidden;
+  opacity: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(58, 56, 56, 0.86);
+  transition: opacity 0.5s;
 }
 .catalog-card__img-item {
   max-width: 100%;
 }
 .catalog-card__img-button {
   position: absolute;
-  visibility: hidden;
+  opacity: 0;
   display: flex;
   align-items: center;
   gap: 11px;
@@ -480,6 +484,10 @@ a {
   background: transparent;
   border: 1px solid #fff;
   cursor: pointer;
+  transition: opacity 0.5s, background-color 0.5s;
+}
+.catalog-card__img-button:hover {
+  background-color: rgba(164, 164, 164, 0.5);
 }
 .catalog-card__img-button img {
   width: 26px;
@@ -690,6 +698,7 @@ a {
   border: none;
   border-radius: 0 50px 50px 0;
   background-color: #f16d7f;
+  transition: background-color 0.5s;
   cursor: pointer;
 }
 @media (max-width: 767px) {
@@ -748,6 +757,10 @@ a {
   width: 32px;
   height: 32px;
   background-color: #fff;
+  transition: all 0.5s;
+}
+.social-link svg path {
+  transition: all 0.5s;
 }
 .social-link:hover {
   background-color: #f16d7f;
@@ -829,6 +842,7 @@ a {
   font-size: 14px;
   color: #636363;
   text-transform: uppercase;
+  transition: color 0.5s;
 }
 .breadcrumbs__link:hover {
   color: #f16d7f;
@@ -920,6 +934,7 @@ a {
   font-size: 16px;
   border: 1px solid #ff6a6a;
   background-color: #fff;
+  transition: background-color 0.5s, color 0.5s;
   cursor: pointer;
 }
 .product-slider__button:hover {
@@ -928,6 +943,9 @@ a {
 }
 .product-slider__button:hover svg path {
   fill: #fff;
+}
+.product-slider__button svg path {
+  transition: all 0.5s;
 }
 
 .slider {
@@ -948,19 +966,19 @@ a {
   border: none;
   cursor: pointer;
 }
+.slider__left svg path, .slider__right svg path {
+  transition: all 0.5s;
+}
+.slider__left:hover svg path, .slider__right:hover svg path {
+  fill: #f16d7f;
+}
 .slider__left {
   padding-right: 5px;
   left: 0;
 }
-.slider__left:hover svg path {
-  fill: #f16d7f;
-}
 .slider__right {
   padding-left: 5px;
   right: 0;
-}
-.slider__right:hover svg path {
-  fill: #f16d7f;
 }
 
 .product-catalog {
@@ -992,10 +1010,20 @@ a {
   color: #6F6E6E;
   font-size: 14px;
   text-transform: uppercase;
+  transition: color 0.5s;
   cursor: pointer;
+}
+.product-details__summary:hover {
+  color: #f16d7f;
+}
+.product-details__summary:hover svg path {
+  fill: #f16d7f;
 }
 .product-details__summary svg {
   margin-top: 2px;
+}
+.product-details__summary svg path {
+  transition: all 0.5s;
 }
 .product-details__info {
   position: absolute;
@@ -1014,6 +1042,10 @@ a {
   color: #6F6E6E;
   font-size: 14px;
   text-transform: uppercase;
+  transition: color 0.5s;
+}
+.product-details__info-item:hover {
+  color: #f16d7f;
 }
 .product-details__info-item label {
   padding-left: 7px;
@@ -1097,7 +1129,11 @@ a {
   font-size: 14px;
   border-bottom: 1px solid #EBEBEB;
   border-left: 5px solid #f16d7f;
+  transition: color 0.5s;
   cursor: pointer;
+}
+.filter__subtitle:hover {
+  color: #f16d7f;
 }
 .filter__options-content {
   display: flex;
@@ -1109,6 +1145,7 @@ a {
 .filter__link {
   font-size: 14px;
   color: #6F6E6E;
+  transition: color 0.5s;
 }
 .filter__link:hover {
   color: #f16d7f;
@@ -1136,10 +1173,18 @@ a {
   color: #6F6E6E;
   font-size: 14px;
   text-transform: uppercase;
+  transition: color 0.5s;
   cursor: pointer;
 }
-.sort__summary svg {
+.sort__summary:hover {
+  color: #f16d7f;
+}
+.sort__summary:hover svg path {
+  fill: #f16d7f;
+}
+.sort__summary svg path {
   margin-top: 2px;
+  transition: all 0.5s;
 }
 .sort__info {
   position: absolute;
@@ -1158,6 +1203,10 @@ a {
   color: #6F6E6E;
   font-size: 14px;
   text-transform: uppercase;
+  transition: color 0.5s;
+}
+.sort__info-item:hover {
+  color: #f16d7f;
 }
 .sort__info-item label {
   padding-left: 7px;
@@ -1204,6 +1253,7 @@ a {
   font-weight: 300;
   color: #C4C4C4;
   line-height: 19px;
+  transition: color 0.5s;
 }
 .pagination__link:hover {
   color: #f16d7f;
@@ -1257,6 +1307,7 @@ a {
   text-transform: uppercase;
   border: 1px solid #A4A4A4;
   background-color: #fff;
+  transition: color 0.5s, background-color 0.5s;
   cursor: pointer;
 }
 .cart__button:hover {
@@ -1334,6 +1385,9 @@ a {
 .cart-card__close:hover svg path {
   fill: #f16d7f;
 }
+.cart-card__close svg path {
+  transition: all 0.5s;
+}
 
 .cart-form {
   display: flex;
@@ -1380,6 +1434,7 @@ a {
   text-transform: uppercase;
   background-color: #fff;
   border: 1px solid #A4A4A4;
+  transition: color 0.5s, background-color 0.5s;
   cursor: pointer;
 }
 .cart-form__button:hover {
@@ -1434,8 +1489,118 @@ a {
   color: #fff;
   background-color: #f16d7f;
   border: none;
+  transition: background-color 0.5s;
   cursor: pointer;
 }
 .cart-checkout__button:hover {
+  background-color: #ff6a6a;
+}
+
+.registration {
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+.registration .center-container {
+  display: flex;
+  justify-content: space-between;
+}
+.registration__advantages {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  max-width: 652px;
+}
+.registration__title, .registration__text, .registration__item {
+  font-weight: 300;
+  font-size: 24px;
+}
+.registration__title {
+  text-transform: uppercase;
+}
+.registration__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style-type: none;
+}
+.registration__item {
+  position: relative;
+  padding-left: 33px;
+}
+.registration__item::before {
+  position: absolute;
+  content: url("data:image/svg+xml; utf8, <svg width='20' height='16' viewBox='0 0 20 16' fill='none' xmlns='http://www.w3.org/2000/svg'> <path d='M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z' fill='black' /> </svg> ");
+  top: 0;
+  left: 0;
+}
+
+.registration-form {
+  max-width: 360px;
+}
+.registration-form__name {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 31px;
+}
+.registration-form__title {
+  font-weight: 300;
+  font-size: 16px;
+  color: #222;
+}
+.registration-form__input {
+  min-height: 45px;
+  padding: 0 17px;
+  font-weight: 300;
+  font-size: 13px;
+  border: 1px solid #a4a4a4;
+}
+.registration-form__input::-moz-placeholder {
+  color: #b1b1b1;
+}
+.registration-form__input::placeholder {
+  color: #b1b1b1;
+}
+.registration-form__gender {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 33px;
+}
+.registration-form__gender-item {
+  display: flex;
+}
+.registration-form__gender-item label {
+  padding-left: 10px;
+  font-weight: 300;
+  font-size: 11px;
+}
+.registration-form__details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 39px;
+}
+.registration-form__warning {
+  margin-top: -5px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  color: #b1b1b1;
+}
+.registration-form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  min-width: 167px;
+  min-height: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #f16d7f;
+  border: none;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+.registration-form__button:hover {
   background-color: #ff6a6a;
 }/*# sourceMappingURL=style.css.map */

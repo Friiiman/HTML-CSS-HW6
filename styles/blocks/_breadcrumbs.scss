@@ -29,6 +29,7 @@
         font-size: 14px;
         color: #636363;
         text-transform: uppercase;
+        transition: color .5s;
 
         &:hover {
             color: $main-color;

@@ -110,6 +110,7 @@
         border: none;
         border-radius: 0 50px 50px 0;
         background-color: $main-color;
+        transition: background-color .5s;
         cursor: pointer;
 
         @media (max-width: $screen-md) {

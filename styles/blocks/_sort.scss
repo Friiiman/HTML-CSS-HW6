@@ -23,10 +23,20 @@
         color: #6F6E6E;
         font-size: 14px;
         text-transform: uppercase;
+        transition: color .5s;
         cursor: pointer;
 
-        & svg {
+        &:hover {
+            color: $main-color;
+
+            & svg path {
+                fill: $main-color;
+            }
+        }
+
+        & svg path {
             margin-top: 2px;
+            transition: all .5s;
         }
     }
 
@@ -48,6 +58,11 @@
         color: #6F6E6E;
         font-size: 14px;
         text-transform: uppercase;
+        transition: color .5s;
+
+        &:hover {
+            color: $main-color;
+        }
 
         & label {
             padding-left: 7px;

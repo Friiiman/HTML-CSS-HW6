@@ -5,6 +5,11 @@
     width: 32px;
     height: 32px;
     background-color: $white-color;
+    transition: all .5s;
+
+    & svg path {
+        transition: all .5s;
+    }
 
     &:hover {
         background-color: $main-color;

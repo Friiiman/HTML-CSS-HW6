@@ -27,6 +27,7 @@
         font-weight: 300;
         color: #C4C4C4;
         line-height: 19px;
+        transition: color .5s;
 
         &:hover {
             color: $main-color;

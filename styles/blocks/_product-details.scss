@@ -21,11 +21,25 @@
         color: #6F6E6E;
         font-size: 14px;
         text-transform: uppercase;
+        transition: color .5s;
         cursor: pointer;
+
+        &:hover {
+            color: $main-color;
+
+            & svg path {
+                fill: $main-color;
+            }
+        }
 
         & svg {
             margin-top: 2px;
+
+            & path {
+                transition: all .5s;
+            }
         }
+
     }
 
     &__info {
@@ -46,6 +60,11 @@
         color: #6F6E6E;
         font-size: 14px;
         text-transform: uppercase;
+        transition: color .5s;
+
+        &:hover {
+            color: $main-color;
+        }
 
         & label {
             padding-left: 7px;

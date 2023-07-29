@@ -73,5 +73,9 @@
         &:hover svg path {
             fill: $main-color;
         }
+
+        & svg path {
+            transition: all .5s;
+        }
     }
 }

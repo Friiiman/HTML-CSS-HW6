@@ -16,23 +16,23 @@
         background-color: rgba(42, 42, 42, 0.15);
         border: none;
         cursor: pointer;
+
+        & svg path {
+            transition: all .5s;
+        }
+
+        &:hover svg path {
+            fill: $main-color;
+        }
     }
 
     &__left {
         padding-right: 5px;
         left: 0;
-
-        &:hover svg path {
-            fill: $main-color;
-        }
     }
 
     &__right {
         padding-left: 5px;
         right: 0;
-
-        &:hover svg path {
-            fill: $main-color;
-        }
     }
 }

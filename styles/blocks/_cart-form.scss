@@ -41,6 +41,7 @@
         text-transform: uppercase;
         background-color: $white-color;
         border: 1px solid #A4A4A4;
+        transition: color .5s, background-color .5s;
         cursor: pointer;
 
         &:hover {

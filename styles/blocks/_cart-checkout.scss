@@ -50,6 +50,7 @@
         color: $white-color;
         background-color: $main-color;
         border: none;
+        transition: background-color .5s;
         cursor: pointer;
 
         &:hover {

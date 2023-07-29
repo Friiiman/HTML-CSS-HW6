@@ -95,6 +95,7 @@
         font-size: 16px;
         border: 1px solid $sub-color;
         background-color: $white-color;
+        transition: background-color .5s, color .5s;
         cursor: pointer;
 
         &:hover {
@@ -104,6 +105,10 @@
             & svg path {
                 fill: $white-color;
             }
+        }
+
+        & svg path {
+            transition: all .5s;
         }
     }
 }
