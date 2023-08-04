@@ -2,6 +2,11 @@
     display: flex;
     gap: 28px;
     margin-top: 13px;
+    min-width: 360px;
+
+    @media(max-width: 1188px) {
+        justify-content: end;
+    }
 
     &__item {
         position: relative;

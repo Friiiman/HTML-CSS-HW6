@@ -3,7 +3,13 @@
     flex-direction: column;
     gap: 17px;
     padding: 39px 44px 42px;
+    min-width: 360px;
+    max-height: 214px;
     background-color: #F5F3F3;
+
+    @media(max-width: 1121px) {
+        margin-top: 59px;
+    }
 
     &__text {
         display: flex;

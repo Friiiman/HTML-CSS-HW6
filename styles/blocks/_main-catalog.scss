@@ -5,13 +5,22 @@
     &__filter-sort {
         display: flex;
         gap: 30px;
+
+        @media(max-width: 1188px) {
+            justify-content: center;
+        }
     }
 
     &__items {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(300px, 360px));
+        grid-template-rows: repeat(auto-fit, minmax(580px, 1fr));
+        justify-content: center;
         gap: 30px;
         margin-bottom: 48px;
+
+        @media(max-width: 1216px) {
+            gap: 16px;
+        }
     }
 }

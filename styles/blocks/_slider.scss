@@ -4,6 +4,12 @@
     padding-top: 11px;
     padding-bottom: 42px;
 
+    @media(max-width: 1157px) {
+        position: relative;
+        padding: 30px 0;
+        max-height: 624px;
+    }
+
     &__left,
     &__right {
         position: absolute;
@@ -29,6 +35,12 @@
     &__left {
         padding-right: 5px;
         left: 0;
+    }
+
+    &__img {
+        @media(max-width: 1157px) {
+            max-height: 565px;
+        }
     }
 
     &__right {

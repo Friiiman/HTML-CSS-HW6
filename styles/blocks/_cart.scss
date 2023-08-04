@@ -5,6 +5,11 @@
     &__content {
         display: flex;
         justify-content: space-between;
+
+        @media(max-width: 1121px) {
+            flex-direction: column;
+            gap: 64px;
+        }
     }
 
     &__content-left {
@@ -12,6 +17,11 @@
         flex-direction: column;
         gap: 72px;
         max-width: 652px;
+
+        @media(max-width: 1121px) {
+            width: 100%;
+            margin: 0 auto;
+        }
     }
 
     &__cards {
@@ -23,6 +33,11 @@
     &__buttons {
         display: flex;
         justify-content: space-between;
+
+        @media(max-width: 1121px) {
+            justify-content: center;
+            gap: 48px;
+        }
     }
 
     &__button {
@@ -47,5 +62,11 @@
         display: flex;
         flex-direction: column;
         gap: 57px;
+
+        @media(max-width: 1121px) {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 15px;
+        }
     }
 }

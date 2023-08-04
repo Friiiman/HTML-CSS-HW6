@@ -2,8 +2,20 @@
     padding-top: 665px;
     padding-bottom: 128px;
 
+    @media(max-width: 1157px) {
+        padding-top: 128px;
+    }
+
     & .center-container {
         display: flex;
+        justify-content: center;
         gap: 30px;
+
+        & .catalog-card:last-child {
+
+            @media(max-width: 1216px) {
+                display: none;
+            }
+        }
     }
 }

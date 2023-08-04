@@ -1,12 +1,13 @@
 .cart-card {
     position: relative;
     display: flex;
+    max-width: 100%;
     max-height: 306px;
     background-color: $white-color;
     box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
 
     &__img {
-        height: 100%;
+        max-height: 306px;
     }
 
     &__content {

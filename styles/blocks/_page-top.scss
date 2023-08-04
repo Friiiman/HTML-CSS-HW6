@@ -3,10 +3,25 @@
     padding-bottom: 60px;
     background-color: #F8F3F4;
 
+    @media(max-width: 555px) {
+        padding-top: 24px;
+        padding-bottom: 46px;
+    }
+
     & .center-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media(max-width: 555px) {
+            flex-direction: column;
+            gap: 32px;
+        }
+    }
+
+    &__title-only {
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     &__title {

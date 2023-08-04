@@ -1,6 +1,7 @@
 .catalog-card {
     position: relative;
     background-color: #f8f8f8;
+    max-width: 360px;
 
     &:hover &__img::before {
         visibility: visible;
