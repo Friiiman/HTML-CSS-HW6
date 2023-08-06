@@ -6,8 +6,16 @@
     background-color: $white-color;
     box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
 
+    @media(max-width: 599px) {
+        box-shadow: 8px 8px 21px 0 rgba(0, 0, 0, 0.13);
+    }
+
     &__img {
         max-height: 306px;
+
+        @media(max-width: 599px) {
+            max-height: 188px;
+        }
     }
 
     &__content {
@@ -17,6 +25,17 @@
         padding-top: 22px;
         padding-right: 22px;
         padding-left: 31px;
+
+        @media(max-width: 599px) {
+            gap: 25px;
+            padding-top: 13px;
+            padding-right: 25px;
+            padding-left: 17px;
+        }
+
+        @media(max-width: 373px) {
+            padding-left: 5px;
+        }
     }
 
     &__title {
@@ -26,17 +45,31 @@
         line-height: 28px;
         color: #222;
         text-transform: uppercase;
+
+        @media(max-width: 599px) {
+            font-size: 16px;
+            line-height: 19px;
+        }
     }
 
     &__details {
         display: flex;
         flex-direction: column;
         gap: 6px;
+
+        @media(max-width: 599px) {
+            gap: 3px;
+        }
     }
 
     &__detail {
         font-size: 22px;
         color: #575757;
+
+        @media(max-width: 599px) {
+            gap: 3px;
+            font-size: 14px;
+        }
 
         &--price {
             color: $main-color;
@@ -56,6 +89,17 @@
         color: #656565;
         border: 1px solid #EAEAEA;
 
+        @media(max-width: 599px) {
+            margin-left: 15px;
+            width: 24px;
+            height: 15px;
+            font-size: 10px;
+        }
+
+        @media(max-width: 340px) {
+            margin-left: 5px;
+        }
+
         &::-webkit-outer-spin-button,
         &::-webkit-inner-spin-button {
             -webkit-appearance: none;
@@ -70,6 +114,16 @@
         background-color: transparent;
         border: none;
         cursor: pointer;
+
+        @media(max-width: 599px) {
+            top: 15px;
+            right: 12px;
+
+            & svg {
+                width: 10px;
+                height: 10px;
+            }
+        }
 
         &:hover svg path {
             fill: $main-color;

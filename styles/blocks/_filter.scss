@@ -10,8 +10,21 @@
         background-color: $white-color;
         z-index: 5;
 
+        @media(max-width: 1188px) {
+            padding-left: 0;
+        }
+
+        @media(max-width: 479px) {
+            width: 270px;
+        }
+
         &[open] {
             box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+            z-index: 10;
+
+            @media(max-width: 1188px) {
+                padding-left: 7px;
+            }
         }
 
         &[open] .filter__title {
@@ -32,6 +45,17 @@
         font-weight: 600;
         font-size: 14px;
         cursor: pointer;
+
+        @media(max-width: 479px) {
+            & span {
+                display: none;
+            }
+
+            & svg {
+                width: 37px;
+                height: 25px;
+            }
+        }
     }
 
     &__content {

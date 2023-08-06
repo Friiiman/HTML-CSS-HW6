@@ -10,6 +10,10 @@
         max-height: 624px;
     }
 
+    @media(max-width: 555px) {
+        padding: 85px 0;
+    }
+
     &__left,
     &__right {
         position: absolute;
@@ -40,6 +44,10 @@
     &__img {
         @media(max-width: 1157px) {
             max-height: 565px;
+        }
+
+        @media(max-width: 555px) {
+            max-width: 300px;
         }
     }
 

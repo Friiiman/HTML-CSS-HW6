@@ -3,9 +3,19 @@
     gap: 28px;
     margin-top: 13px;
     min-width: 360px;
+    z-index: 5;
 
     @media(max-width: 1188px) {
         justify-content: end;
+    }
+
+    @media(max-width: 479px) {
+        gap: 23px;
+        min-width: 260px;
+    }
+
+    @media(max-width: 349px) {
+        gap: 15px;
     }
 
     &__item {
@@ -30,6 +40,10 @@
         text-transform: uppercase;
         transition: color .5s;
         cursor: pointer;
+
+        @media(max-width: 479px) {
+            font-size: 12px;
+        }
 
         &:hover {
             color: $main-color;
