@@ -18,6 +18,7 @@
 
         @media(max-width: 1216px) {
             flex-direction: row-reverse;
+            gap: 16px;
         }
 
         @media(max-width: 649px) {

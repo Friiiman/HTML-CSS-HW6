@@ -23,6 +23,10 @@
             flex-direction: column;
             gap: 64px;
         }
+
+        @media(max-width: 599px) {
+            gap: 48px;
+        }
     }
 
     &__content-left {
@@ -58,11 +62,6 @@
 
         @media(max-width: 599px) {
             gap: 9px;
-        }
-
-        @media(max-width: 374px) {
-            flex-direction: column;
-            align-items: center;
         }
     }
 
@@ -102,6 +101,7 @@
 
         @media(max-width: 599px) {
             flex-direction: column;
+            gap: 0;
         }
     }
 }
