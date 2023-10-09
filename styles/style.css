@@ -519,6 +519,38 @@ a {
   color: #f16d7f;
 }
 
+.catalog-cart {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+@media (max-width: 1094px) {
+  .catalog-cart {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .catalog-cart {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+}
+.catalog-cart__header {
+  margin-top: 96px;
+  margin-bottom: 64px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+}
+.catalog-cart .cart-card {
+  margin-bottom: 40px;
+}
+.catalog-cart .cart-card:last-child {
+  margin-bottom: 96px;
+}
+
 .advantages {
   padding-top: 103px;
   padding-bottom: 104px;
@@ -1595,7 +1627,7 @@ a {
 .cart-card {
   position: relative;
   display: flex;
-  max-width: 100%;
+  max-width: 652px;
   max-height: 306px;
   background-color: #fff;
   box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);

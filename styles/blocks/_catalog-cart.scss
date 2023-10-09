@@ -1,0 +1,32 @@
+.catalog-cart {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    @media (max-width: $screen-xmd) {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    @media (max-width: $screen-md) {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    &__header {
+        margin-top: 96px;
+        margin-bottom: 64px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+    & .cart-card {
+        margin-bottom: 40px;
+    }
+
+    & .cart-card:last-child {
+        margin-bottom: 96px;
+    }
+}
